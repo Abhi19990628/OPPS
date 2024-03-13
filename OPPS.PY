@@ -48,3 +48,58 @@ class Empolyee:
         print("salary :", self.salary)
 e1 = Empolyee("IT", "Software Developer", 70000)
 e1.show_details()
+
+
+ef sum_of_array(array):
+    sum=0
+    for i in range(len(array)):
+        sum+=array[i]
+    return sum
+array=[25,24,26,25]
+print(sum_of_array(array))
+
+def mul_of_array(array):
+    mul=1
+    for i in range(len(array)):
+        mul*=array[i]
+    return mul
+array=[1,2,3,4,5]
+print(mul_of_array(array))
+
+def even_odd(array):
+    results=[]
+    for i in range(len(array)):
+        if i % 2 == 0:
+            results.append("even")
+        else:
+            results.append("odd")
+    return results
+
+array=[1,2,3,4,5,6]
+print(even_odd(array))
+
+def sum_of_even(array):
+    sum=0
+    for i in array:
+        if i % 2 == 0:
+            sum+=i
+    return sum
+array=[1,2,3,4,5,6]
+print(sum_of_even(array))
+
+def sum_of_array(array):
+    sum_even = 0
+    for num in array:
+        if num % 2 == 0:  # Check if the number is even
+            sum_even += num
+    return sum_even
+
+array = [1, 2, 3, 4, 5, 6]
+print(sum_of_array(array)) 
+
+def sort_arr(array):
+    return sorted(array)
+array=[23,21,23,44,332,2,12,3432,2343,34,32,344,2]
+sort_array=sort_arr(array)
+print("sort_array:",sort_array[-1])
+
