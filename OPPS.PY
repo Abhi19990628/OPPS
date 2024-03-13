@@ -103,3 +103,12 @@ array=[23,21,23,44,332,2,12,3432,2343,34,32,344,2]
 sort_array=sort_arr(array)
 print("sort_array:",sort_array[-1])
 
+def bubble_sort(array):
+    for r in range(1,len(array)):
+        for i in range(len(array)-r):
+            if array[i]>array[i+1]:
+                array[i],array[i+1]=array[i+1],array[i]
+                
+array=[1,3,4,5,6,33,2,32,9]
+bubble_sort(array)
+print("BubbleSort :", array)
