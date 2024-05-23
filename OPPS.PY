@@ -1,7 +1,15 @@
 class Accounts:
     def __init__ (self , bal ,acc):
         self.baclance=bal
-        self.account_no= acc
+        self.account_no= 
+   def debits(self , ammount):
+        self.baclance-=ammount
+        print("RS." , ammount , "was debits")
+        print("total blance is", self.baclance)
+    def credits(self, ammount):
+        self.baclance += ammount
+        print("RS.", ammount , "is cridets")
+        print("total blances is ", self.baclance)
         
    
         
