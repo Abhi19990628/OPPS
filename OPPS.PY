@@ -3,14 +3,7 @@ class Accounts:
         self.baclance=bal
         self.account_no= acc
         
-    def debits(self , ammount):
-        self.baclance-=ammount
-        print("RS." , ammount , "was debits")
-        print("total blance is", self.baclance)
-    def credits(self, ammount):
-        self.baclance += ammount
-        print("RS.", ammount , "is cridets")
-        print("total blances is ", self.baclance)
+   
         
     def get_balance(self):
         return self.baclance
